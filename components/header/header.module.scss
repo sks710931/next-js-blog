@@ -1,0 +1,27 @@
+.jumbotron {
+  padding: 15px;
+  background-color: #1d86b8;
+  border-radius: 0;
+  margin-bottom: 0,
+}
+
+.heading {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.text {
+  color: white;
+  font-size: 13px;
+  margin-bottom: 0px;
+  letter-spacing: 2px;
+}
+.icon {
+  margin-right: 5px;
+  margin-top: 5;
+  color: #12597b;
+  &:hover {
+    color: orange;
+    cursor: pointer;
+  }
+}
