@@ -1,4 +1,4 @@
-import { useRouter } from "next/router";
+
 import axios from "axios";
 import { Layout } from "../../components/layout";
 import classes from "../../styles/post.module.scss";
@@ -12,8 +12,7 @@ import { PostBody } from './../../components/post-body/post-body';
 import { Subscribe } from './../../components/subscribe/subscribe';
 
 const PostPage = ({ post, body }) => {
-  const router = useRouter();
-  const { slug } = router.query;
+  
   const [location, setLocation] = useState("");
   useEffect(() => {
     setLocation(window.location.href);
