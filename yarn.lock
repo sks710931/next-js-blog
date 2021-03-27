@@ -1977,6 +1977,11 @@ shell-quote@1.7.2:
   resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.7.2.tgz#67a7d02c76c9da24f99d20808fcaded0e0e04be2"
   integrity sha512-mRz/m/JVscCrkMyPqHc/bczi3OQHkLTqXHEFu0zDhK/qfv3UcOA4SVmRCLmos4bhjr9ekVQubj/R7waKapmiQg==
 
+simple-react-validator@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/simple-react-validator/-/simple-react-validator-1.6.0.tgz#df3a0c32b6160945d36aefe65cc30f1b9e48d2a1"
+  integrity sha512-A4DZwxUqB1oddoiuJ7TTVDS2ZY/yQteCcUw9rwLk81SnVFYg2uqSbU37vBkP9klfVWaoEaiczRiQlWQNNVx5Kg==
+
 source-map@0.7.3:
   version "0.7.3"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.7.3.tgz#5302f8169031735226544092e64981f751750383"
