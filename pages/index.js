@@ -5,13 +5,27 @@ import { Subscribe } from "../components/subscribe/subscribe";
 import { Slider } from "./../components/slider/slider";
 import { Container } from "react-bootstrap";
 import axios from "axios";
+import { PostItem } from "../components/post-item/post-item";
+import { PostList } from "../components/post-list/post-list";
 
 export default function Home({ posts }) {
   return (
     <Layout>
       <div>
         <Head>
-          <title>Create Next App</title>
+          <title>
+            Shivam Singh's Blog | A fullstack javacript developer from
+            Bengaluru,India
+          </title>
+          <meta
+            name="description"
+            content="Fullstack Developer and Blogger based in Bengaluru India, currently focusing on Angular, React, Vue, Node and .NET Technologies"
+          />
+          <meta
+            property="og:title"
+            content="Fullstack Developer and Blogger based in Bengaluru India, currently focusing on Angular, React, Vue, Node and .NET Technologies"
+          />
+          <meta property="og:image" content="/logo.png" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
@@ -19,8 +33,10 @@ export default function Home({ posts }) {
           <Container className={styles.container}>
             <Slider />
           </Container>
+          <Container>
+            <PostList posts={posts} />
+          </Container>
         </div>
-        {JSON.stringify(posts)}
         <Subscribe />
       </div>
     </Layout>
@@ -29,20 +45,20 @@ export default function Home({ posts }) {
 
 export async function getServerSideProps(context) {
   let data;
-  const response = await axios.get(process.env.NEXT_PUBLIC_ENDPOINT_URL + "/posts");
-  if(response.status===200){
+  const response = await axios.get(
+    process.env.NEXT_PUBLIC_ENDPOINT_URL + "/posts"
+  );
+  if (response.status === 200) {
     return {
       props: {
         posts: response.data,
       },
     };
-  }
-  else{
+  } else {
     return {
       props: {
         posts: [],
       },
     };
   }
-  
 }

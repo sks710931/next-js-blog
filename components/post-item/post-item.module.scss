@@ -1,0 +1,108 @@
+.postContainer {
+  padding: 15px;
+}
+.postBox {
+  background-color: #ffff;
+  border: 1px solid #d5d5d5;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+}
+.thumbnail {
+  height: 300px;
+  width: 100%;
+}
+.body {
+  padding: 20px;
+}
+.heading {
+  max-height: 70px;
+  overflow: hidden;
+  white-space: npwrap;
+  text-overflow: ellipsis;
+  & a {
+    text-decoration: none;
+    color: white;
+  }
+  & h3 {
+    color: #1d86b8;
+    &:hover {
+      cursor: pointer;
+      color: #8d8b8b;
+    }
+  }
+}
+.description {
+  color: grey;
+  max-height: 70px;
+  overflow: hidden;
+}
+.meta {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 8px;
+}
+.flexChild {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.author {
+  width: 150%;
+  & a {
+    text-decoration: none;
+    color: white;
+  }
+}
+.authorImage {
+  border-radius: 50%;
+  width: 30px;
+  height: 100%;
+}
+.authorName {
+  margin-left: 8px;
+  color: orange;
+  font-weight: 500;
+}
+.postDate {
+  font-weight: 200;
+  color: orange;
+}
+.readTime {
+  justify-content: flex-end;
+  & span {
+    font-weight: 200;
+    color: orange;
+  }
+}
+.actions {
+  margin-top: 8px;
+  display: flex;
+  justify-content: flex-end;
+  & a {
+    all: unset;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 500;
+    color: orange;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.topTag {
+  background-color: #f84a4a;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 10px;
+  color: white;
+  border-bottom-left-radius: 5px;
+  & a {
+    text-decoration: none;
+    color: white;
+  }
+}
