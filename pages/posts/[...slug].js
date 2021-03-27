@@ -28,6 +28,7 @@ const PostPage = ({ post, body }) => {
           content={`${post.title} | Shivam Singh's Blog`}
         />
         <meta property="og:image" content={post.postImage} />
+        <meta property="og:description" content={post.subTitle} />
       </Head>
       <div className={classes.postHeader}>
         <Container>
