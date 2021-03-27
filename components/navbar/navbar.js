@@ -15,23 +15,23 @@ export const NavigationBar = (props) => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Link href="">
-              <a href="" className={`${styles.navLink} nav-link`}>
+            <Link href="/">
+              <a className={`${styles.navLink} nav-link`}>
                 Home
               </a>
             </Link>
             <Link className={`${styles.navLink} nav-link`} href="/archive">
-              <a href="/archive" className={`${styles.navLink} nav-link`}>
+              <a className={`${styles.navLink} nav-link`}>
                 Archive
               </a>
             </Link>
             <Link className={`${styles.navLink} nav-link`} href="/about">
-              <a href="/about" className={`${styles.navLink} nav-link`}>
+              <a className={`${styles.navLink} nav-link`}>
                 About Me
               </a>
             </Link>
             <Link className={`${styles.navLink} nav-link`} href="/contact">
-              <a href="/contact" className={`${styles.navLink} nav-link`}>
+              <a className={`${styles.navLink} nav-link`}>
                 Contact
               </a>
             </Link>

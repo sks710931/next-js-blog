@@ -1,0 +1,52 @@
+.content{
+  min-height: 325px;
+}
+.container {
+  background-color: #ffff;
+  margin-bottom: 15px;
+ }
+.monthHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  &:hover {
+    cursor: pointer;
+   }
+  & .count {
+    margin-left: 5px;
+    color: #1d86b8;
+   }
+  font-size: 20px;
+  font-weight: 600;
+ }
+.card {
+  border: none;
+ }
+.cardHeader {
+  background-color: transparent;
+  border: none;
+ }
+.heading {
+  margin-top: 30px;
+  margin-bottom: 30px;
+ }
+.cardBody {
+  padding-left: 80px;
+  .row {
+    margin-bottom: 10px;
+    a {
+      text-decoration: none;
+      color: white;
+     }
+    .date{
+      color: orange;
+     }
+    & .title{
+      color: #1d86b8;
+      font-size: 18px;
+      font-weight: 500;
+      padding-left: 30px;
+      
+    }
+   }
+ }
