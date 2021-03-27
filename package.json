@@ -9,8 +9,10 @@
   },
   "dependencies": {
     "@material-ui/core": "^4.11.3",
+    "@syncfusion/ej2-react-richtexteditor": "^18.4.49",
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
+    "disqus-react": "^1.0.11",
     "fg-loadcss": "^3.1.0",
     "next": "10.0.9",
     "react": "17.0.2",

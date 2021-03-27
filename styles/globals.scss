@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: Roboto Slab, serif !important;
+  background-color: #f5f5f5 !important ;
 }
 
 a {
@@ -50,4 +52,23 @@ a {
   &:hover {
     opacity: 0.9;
   }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #eff6ff; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #50b6e7; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1d86b8; 
 }

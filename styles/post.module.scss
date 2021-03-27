@@ -1,0 +1,48 @@
+.postHeader {
+  background-color: #1d86b8;
+  margin-top: -15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.postImage {
+  max-width: 100%;
+  min-height: 300px;
+  border-radius: 10px;
+}
+.postTitle {
+  color: white;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+.postSubTitle {
+  color: white;
+  font-size: 20px;
+}
+.metaContainer {
+  display: flex;
+  flex-direction: column;
+}
+.metaRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 15px;
+  & a {
+    text-decoration: none;
+    color: white;
+  }
+}
+.tags {
+  margin-right: 30px;
+  color: orange;
+  font-weight: 500;
+  letter-spacing: 2px;
+  border: 2px solid orange;
+  padding: 2px 15px 2px 15px;
+  border-radius: 15px;
+}
+.metaSpan {
+  margin-right: 30px;
+  color: orange;
+  font-weight: 500;
+}
