@@ -42,7 +42,7 @@ export const Subscribe = () => {
             <p className={`${classes.smallText} ${classes.noMargin}`}>
               Follow Us
             </p>
-            <div className={classes.inputRow}>
+            <div className={classes.iconRow}>
               <a target="_blank" href="https://www.linkedin.com/in/sks71093/">
                 <Icon className={`fab fa-linkedin ${classes.icon}`} />
               </a>
