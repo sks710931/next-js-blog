@@ -1,0 +1,49 @@
+.parent {
+  background-color: #1d86b8;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.smallText {
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+.megaText {
+  color: white;
+  font-size: 50px;
+  letter-spacing: 3px;
+  font-weight: 800;
+}
+.text {
+  color: white;
+  & b {
+    color: orange;
+  }
+}
+.inputRow {
+  display: flex;
+  flex-direction: row;
+  label{
+    color: white;
+  }
+  input{
+    &:focus{
+      border-bottom: 3px solid orange;
+    }
+  }
+}
+.icon {
+  margin-right: 5px;
+  margin-top: 5px;
+  color: #12597b;
+  &:hover {
+    color: white;
+    cursor: pointer;
+  }
+}
+.noMargin {
+  margin: 0px;
+}

@@ -1,16 +1,24 @@
-import Head from 'next/head'
-import { Header } from '../components/header/header'
-import styles from '../styles/Home.module.scss'
+import Head from "next/head";
+import { Layout } from "../components/layout";
+import { TextBox } from "../components/textbox/textbox";
+import styles from "../styles/Home.module.scss";
+import { TextArea } from '../components/textarea/textarea';
+import { Subscribe } from "../components/subscribe/subscribe";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Layout>
+      <div className={styles.container}>
+        <Head>
+          <title>Create Next App</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
 
-      <Header />
-    </div>
-  )
+        <div className={styles.content}>
+
+        </div>
+        <Subscribe />
+      </div>
+    </Layout>
+  );
 }

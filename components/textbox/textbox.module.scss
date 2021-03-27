@@ -1,0 +1,29 @@
+.textBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+.label {
+  color: grey;
+  margin-right: 15px;
+}
+.input {
+  line-height: 50px;
+  outline: none;
+  padding-left: 15px;
+  padding-right: 35px;
+  border: 1px solid #d5d5d5;
+  height: 50px;
+  &:focus{
+    border-bottom: 2px solid #1d86b8
+    }
+  }
+.icon {
+  position: absolute;
+  right: 10px;
+  top: 43px;
+  font-size: 25;
+  color: #1d86b8;
+}
