@@ -71,9 +71,9 @@ export const PostItem = ({ post }) => {
         </div>
         {tags && (
           <div className={classes.topTag} style={{ backgroundColor: `green` }}>
-            <Link href={`/category/${tags[1].tagName}`}>
+            <Link href={`/category/${tags[0].tagName}`}>
               <a>
-                <span>{tags[1].tagName}</span>
+                <span>{tags[0].tagName}</span>
               </a>
             </Link>
           </div>

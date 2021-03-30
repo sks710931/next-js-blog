@@ -12,6 +12,7 @@ export default function AboutPage() {
               <div className={styles.avatar}>
                 <img src="/images/profile.png" alt="Shivam Singh Avatar" />
                 <h1>Hi! I am Shivam</h1>
+                <p>I am a Fullstack web developer from Bengaluru, India</p>
               </div>
             </Col>
             <Col className={styles.right} sm={12} md={7}>
