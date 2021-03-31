@@ -27,6 +27,7 @@ export default function Home({ posts }) {
           />
           <meta property="og:image" content="/logo.png" />
           <link rel="icon" href="/favicon.ico" />
+          <script data-ad-client="ca-pub-5306253231496448" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         </Head>
 
         <div className={styles.content}>
