@@ -1,4 +1,3 @@
-
 import axios from "axios";
 import { Layout } from "../../components/layout";
 import classes from "../../styles/post.module.scss";
@@ -8,11 +7,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import Link from "next/link";
 import { parseDate } from "./../../utils/parse-date";
 import { useEffect, useState } from "react";
-import { PostBody } from './../../components/post-body/post-body';
-import { Subscribe } from './../../components/subscribe/subscribe';
+import { PostBody } from "./../../components/post-body/post-body";
+import { Subscribe } from "./../../components/subscribe/subscribe";
 
 const PostPage = ({ post, body }) => {
-  
   const [location, setLocation] = useState("");
   useEffect(() => {
     setLocation(window.location.href);
@@ -28,6 +26,11 @@ const PostPage = ({ post, body }) => {
         />
         <meta property="og:image" content={post.postImage} />
         <meta property="og:description" content={post.subTitle} />
+
+        <script
+          src="https://cdn.embedly.com/widgets/platform.js"
+          charset="UTF-8"
+        ></script>
       </Head>
       <div className={classes.postHeader}>
         <Container>
@@ -49,7 +52,9 @@ const PostPage = ({ post, body }) => {
                   post.tags &&
                   post.tags.map((tag, index) => (
                     <Link key={index} href={`/category/${tag.tagName}`}>
-                      <a><span  className={classes.tags}>{tag.tagName}</span></a>
+                      <a>
+                        <span className={classes.tags}>{tag.tagName}</span>
+                      </a>
                     </Link>
                   ))}
               </div>
