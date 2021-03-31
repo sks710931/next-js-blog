@@ -9,6 +9,7 @@ import { parseDate } from "./../../utils/parse-date";
 import { useEffect, useState } from "react";
 import { PostBody } from "./../../components/post-body/post-body";
 import { Subscribe } from "./../../components/subscribe/subscribe";
+import Comments from "../../components/comments/comments";
 
 const PostPage = ({ post, body }) => {
   const [location, setLocation] = useState("");
@@ -79,14 +80,7 @@ const PostPage = ({ post, body }) => {
         <Row>
           <Col sm={12}>
             {post && post.id && (
-              <DiscussionEmbed
-                shortname="blog-shivam-singh-com"
-                config={{
-                  url: location,
-                  identifier: post.id.toString(),
-                  title: post.title, //e.g. for Traditional Chinese (Taiwan)
-                }}
-              />
+              <Comments />
             )}
           </Col>
         </Row>
